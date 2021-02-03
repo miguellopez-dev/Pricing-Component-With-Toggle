@@ -21,6 +21,9 @@ main {
 	background-position: bottom left, top right;
 	background-repeat: no-repeat;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 h2 {
