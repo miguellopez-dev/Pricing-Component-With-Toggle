@@ -1,0 +1,66 @@
+/************ GLOBAL STYLES ************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: #f6f6fe;
+  background-image: url("../images/bg-bottom.svg"), url("../images/bg-top.svg");
+  background-position: bottom left, top right;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: #6d708d;
+}
+
+h3 {
+  margin-top: 3rem;
+}
+
+h3,
+h4 {
+  font-size: 1.3rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 80%;
+  height: 3.5rem;
+  margin-bottom: 2.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/************ WRAPPER SECTION ************/
+.wrapper {
+  width: 70%;
+  margin: auto;
+}
+/*# sourceMappingURL=global.css.map */

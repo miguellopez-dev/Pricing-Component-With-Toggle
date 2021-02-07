@@ -1,0 +1,120 @@
+/************ CARD SECTIONS ************/
+.cards {
+  color: #6d708d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.side-card {
+  background: #ffffff;
+  border-radius: 2.5% 0 0 2.5%;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 33%;
+}
+
+.side-card hr {
+  margin: 2rem;
+  opacity: 0.2;
+}
+
+.side-card button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  text-transform: uppercase;
+  color: #f6f6fe;
+  font-weight: 700;
+}
+
+.side-card button:hover, .side-card button:focus {
+  background: transparent;
+  border: solid 1px #696fdd;
+  color: #696fdd;
+  outline: none;
+}
+
+.right {
+  border-radius: 0 2.5% 0.8rem 2.5%;
+}
+
+.middle-card {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  border-radius: 2.5%;
+  width: 33%;
+  padding: 1.5rem;
+}
+
+.middle-card .yearly,
+.middle-card .monthly {
+  color: #ffffff;
+}
+
+.middle-card hr {
+  border-color: #f6f6fe;
+  opacity: 0.2;
+  margin: 2rem;
+}
+
+.middle-card button {
+  background: #ffffff;
+  color: #696fdd;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+.middle-card button:hover, .middle-card button:focus {
+  outline: transparent;
+  background: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.yearly,
+.monthly {
+  color: #494c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5.5rem;
+  padding: 1rem 1rem 0;
+}
+
+.yearly .currency,
+.monthly .currency {
+  padding-right: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.hide {
+  display: none;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.attribution a:hover {
+  color: #a3a8f0;
+}
+/*# sourceMappingURL=cards.css.map */

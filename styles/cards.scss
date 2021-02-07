@@ -1,0 +1,115 @@
+/************ CARD SECTIONS ************/
+
+.cards {
+	color: hsl(233, 13%, 49%);
+	display: flex;
+
+	text-align: center;
+	padding-top: 5.5rem;
+}
+.side-card {
+	background: #ffffff;
+	border-radius: 2.5% 0 0 2.5%;
+	box-shadow: 0 5px 20px rgba(#000000, 0.1);
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	width: 33%;
+
+	hr {
+		margin: 2rem;
+
+		opacity: 0.2;
+	}
+
+	button {
+		background-image: linear-gradient(
+			to right,
+			hsl(236, 72%, 79%),
+			hsl(237, 63%, 64%)
+		);
+		text-transform: uppercase;
+		color: hsl(240, 78%, 98%);
+		font-weight: 700;
+
+		&:hover,
+		&:focus {
+			background: transparent;
+			border: solid 1px hsl(237, 63%, 64%);
+			color: hsl(237, 63%, 64%);
+
+			outline: none;
+		}
+	}
+}
+.right {
+	border-radius: 0 2.5% 0.8rem 2.5%;
+}
+
+.middle-card {
+	color: #ffffff;
+	background: linear-gradient(
+		to bottom right,
+		hsl(236, 72%, 79%),
+		hsl(237, 63%, 64%)
+	);
+	border-radius: 2.5%;
+	width: 33%;
+	padding: 1.5rem;
+
+	.yearly,
+	.monthly {
+		color: #ffffff;
+	}
+
+	hr {
+		border-color: hsl(240, 78%, 98%);
+		opacity: 0.2;
+		margin: 2rem;
+	}
+
+	button {
+		background: #ffffff;
+		color: hsl(237, 63%, 64%);
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+		font-weight: 700;
+
+		&:hover,
+		&:focus {
+			outline: transparent;
+			background: transparent;
+			border: solid 1px #ffffff;
+			color: #ffffff;
+			transition: all 0.2s;
+		}
+	}
+}
+
+.yearly,
+.monthly {
+	color: hsl(232, 13%, 33%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5.5rem;
+	padding: 1rem 1rem 0;
+	.currency {
+		padding-right: 0.5rem;
+		font-size: 3.2rem;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.attribution {
+	font-size: 1.1rem;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+		&:hover {
+			color: hsl(236, 72%, 79%);
+		}
+	}
+}
