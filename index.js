@@ -6,7 +6,7 @@ const priceMonth = document.querySelectorAll('.monthly');
 
 check.addEventListener('click', () => {
 	if (check.checked) {
-		// Reomves Hide class from monthly and adds it to annually
+		// Removes Hide class from monthly and adds it to annually
 		annuallyMonthlyText[0].classList.remove('dark');
 		annuallyMonthlyText[1].classList.add('dark');
 
@@ -18,7 +18,7 @@ check.addEventListener('click', () => {
 			i.classList.remove('hide');
 		});
 	} else {
-		// Reomves Hide class from annually and adds it monthly
+		// Removes Hide class from annually and adds it monthly
 		annuallyMonthlyText[0].classList.add('dark');
 		annuallyMonthlyText[1].classList.remove('dark');
 
