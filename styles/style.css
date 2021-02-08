@@ -72,7 +72,7 @@ button {
   padding-top: 5rem;
 }
 
-.selection {
+.top__selection {
   color: #b3b5c6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,11 +88,11 @@ button {
           align-items: center;
 }
 
-.dark {
+.top__dark {
   color: #6d708d;
 }
 
-.slider {
+.top__slider {
   position: relative;
   display: inline-block;
   width: 4rem;
@@ -102,7 +102,7 @@ button {
   cursor: pointer;
 }
 
-.slider:before {
+.top__slider:before {
   content: '';
   position: absolute;
   width: 1.5rem;
@@ -115,21 +115,21 @@ button {
   transition: all 0.3s;
 }
 
-.checkbox:checked + .slider:before {
+.top__checkbox:checked + .top__slider:before {
   left: 20px;
 }
 
-.checkbox:checked + .slider {
+.top__checkbox:checked + .top__slider {
   background-color: #a3a8f0;
 }
 
-.checkbox:focus + .slider {
+.top__checkbox:focus + .top__slider {
   -webkit-box-shadow: 0 0 3px #a3a8f0;
           box-shadow: 0 0 3px #a3a8f0;
   outline: 3px solid #a3a8f0;
 }
 
-.checkbox {
+.top__checkbox {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -148,7 +148,7 @@ button {
   padding-top: 5.5rem;
 }
 
-.side-card {
+.cards__side-card {
   background: #ffffff;
   border-radius: 2.5% 0 0 2.5%;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -158,12 +158,12 @@ button {
   width: 33%;
 }
 
-.side-card hr {
+.cards__side-card hr {
   margin: 2rem;
   opacity: 0.2;
 }
 
-.side-card button {
+.cards__side-card button {
   background-image: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(to right, #a3a8f0, #696fdd);
   text-transform: uppercase;
@@ -171,18 +171,18 @@ button {
   font-weight: 700;
 }
 
-.side-card button:hover, .side-card button:focus {
+.cards__side-card button:hover, .cards__side-card button:focus {
   background: transparent;
   border: solid 1px #696fdd;
   color: #696fdd;
   outline: none;
 }
 
-.right {
+.cards__right {
   border-radius: 0 2.5% 0.8rem 2.5%;
 }
 
-.middle-card {
+.cards__middle-card {
   color: #ffffff;
   background: -webkit-gradient(linear, left top, right bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
@@ -191,18 +191,13 @@ button {
   padding: 1.5rem;
 }
 
-.middle-card .yearly,
-.middle-card .monthly {
-  color: #ffffff;
-}
-
-.middle-card hr {
+.cards__middle-card hr {
   border-color: #f6f6fe;
   opacity: 0.2;
   margin: 2rem;
 }
 
-.middle-card button {
+.cards__middle-card button {
   background: #ffffff;
   color: #696fdd;
   text-transform: uppercase;
@@ -210,7 +205,7 @@ button {
   font-weight: 700;
 }
 
-.middle-card button:hover, .middle-card button:focus {
+.cards__middle-card button:hover, .cards__middle-card button:focus {
   outline: transparent;
   background: transparent;
   border: solid 1px #ffffff;
@@ -219,8 +214,7 @@ button {
   transition: all 0.2s;
 }
 
-.yearly,
-.monthly {
+.cards__yearly, .cards__monthly {
   color: #494c5f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,10 +229,13 @@ button {
   padding: 1rem 1rem 0;
 }
 
-.yearly .currency,
-.monthly .currency {
+.cards__yearly .currency, .cards__monthly .currency {
   padding-right: 0.5rem;
   font-size: 3.2rem;
+}
+
+.cards__yearly--white, .cards__monthly--white {
+  color: #ffffff;
 }
 
 .hide {
@@ -262,7 +259,7 @@ button {
   .wrapper {
     width: 90%;
   }
-  .selection {
+  .top__selection {
     width: 85%;
   }
 }
@@ -275,15 +272,14 @@ button {
   .top {
     width: 70%;
   }
-  .selection {
+  .top__selection {
     width: 100%;
   }
   .cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .side-card,
-  .middle-card {
+  .cards__side-card, .cards__middle-card {
     border-radius: 2.5%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
